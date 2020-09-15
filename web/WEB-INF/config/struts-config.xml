@@ -1,0 +1,13 @@
+<struts-config>
+<form-beans></form-beans>
+<global-exceptions></global-exceptions>
+<global-forwards></global-forwards>
+<action-mapping>
+    <action
+        path="/LoginAction"
+        type="login.LoginAction"
+        forwrd="login.jsp">
+        <forward name="loginView" path="/login.jsp"/>
+    </action>
+</action-mapping>
+</struts-config>
